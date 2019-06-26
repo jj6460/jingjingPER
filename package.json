@@ -7,13 +7,15 @@
     "build": "ng build",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand",
+    "test:coverage": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "jest": {
     "preset": "jest-preset-angular",
     "setupFilesAfterEnv": [
-      "src/setupJest.ts"
+      "./src/setup-jest.ts"
     ]
   },
   "private": true,
