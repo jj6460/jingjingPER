@@ -5,7 +5,10 @@ import { Testcom1Component } from './testcom1/testcom1.component';
 const routes: Routes = [
   {
     path: '',
-    component: Testcom1Component
+    component: Testcom1Component,
+    children: [
+      { path: '', component: Testcom1Component }
+    ]
   }
 ];
 
